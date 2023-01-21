@@ -1,0 +1,279 @@
+<html>
+<head>
+  <title>Google lense vs Mobilenet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+        <p id = "z">CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</p>
+        <br><br>
+        <span class = "google_lens"><img src ="images.png"></span>
+        <br><br>
+        <p>VS</p>
+        <br>
+        <p class = "btn btn-primary">Mobilenet</p>
+        <br><br><br><br>
+        <ol>
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Water Bottle</b>
+                <br><br>
+                <img id = "i"class = "img" src = "water bot.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Water Bottle</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Pot</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Google Lens is more accurate
+             </h4>
+            </div>
+
+        <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Shoes</b>
+                <br><br>
+                <img id = "i"class = "img" src = "shoes.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Shoes</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Spike shoes</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Google Lens is more accurate
+             </h4>
+            </div>
+
+            <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Key</b>
+                <br><br>
+                <img id = "i"class = "img" src = "key.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Key</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Key</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Draw
+             </h4>
+            </div>
+
+            <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Photo Frame</b>
+                <br><br>
+                <img id = "i"class = "img" src = "frame.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Black Frame</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Stairs</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Google Lens is more accurate
+             </h4>
+            </div>
+
+            <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Watch</b>
+                <br><br>
+                <img id = "i"class = "img" src = "watch.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Watch</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Clock</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Google Lens is more accurate
+             </h4>
+            </div>
+
+            <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Salad</b>
+                <br><br>
+                <img id = "i"class = "img" src = "salad.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Fruits Salad</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Fruits</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Google Lens is more accurate
+             </h4>
+            </div>
+
+            <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Guggles</b>
+                <br><br>
+                <img id = "i"class = "img" src = "Guggles.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Guggles</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Spex</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Google Lens is more accurate
+             </h4>
+            </div>
+
+            <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Bag </b>
+                <br><br>
+                <img id = "i"class = "img" src = "Bag.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Bag</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Bag</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Draw
+             </h4>
+            </div>
+
+            <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+            <div id="y" class = "test_image_and_result1 col-xs-12">
+             <li class = "col-sm-4 col-xs-8">
+                <b class = "white1">Test Image - Tablet</b>
+                <br><br>
+                <img id = "i"class = "img" src = "tablet.png">
+             </li>
+             <h5 class = "first col-sm-4 col-xs-12">
+                Output on <b id = "b1">Google Lens -</b>
+                <span id = "spa">Tablet</span>
+             </h5>
+             <h5 class = "second col-sm-4 col-xs-12">
+                Output on <b id = "b2">Mobilenet Model -</b>
+                <span id = "sp">Phone</span>
+             </h5>
+             <br><br>
+             <h3 id = "re1" class = "btn btn-success heading" >
+                Results - 
+             </h3>
+             <br><br>
+             <h4 id = "re11" class = "col-lg-20 col-xm-12 heading_div">
+             </h4>
+             <br>
+             <h4>
+                Google Lens is more accurate
+             </h4>
+            </div>
+
+        </ol>
+    </center>
+</body>
+</html>

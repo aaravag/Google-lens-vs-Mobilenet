@@ -1,0 +1,42 @@
+#z{
+    font-size:30px;
+}
+
+.google_lens{
+    font-size:10px;
+}
+
+#y{
+    background-color: gray;
+}
+
+#i{
+    border-radius:20px;
+}
+
+h5{
+    font-size: 20px;
+    color: rgb(190, 12, 116);
+}
+
+#spa{
+    color: aquamarine;
+}
+#sp{
+    color:rgb(41, 26, 129);
+}
+#b1{
+    color:green;
+}
+#b2{
+    color:blue;
+}
+.heading_div
+  {
+    background: rgb(180, 8, 8) ; 
+    border-radius: 20px; 
+    float:none;
+    padding:5px;
+    color: black;
+    box-shadow:5px 5px 5px grey;
+  }
